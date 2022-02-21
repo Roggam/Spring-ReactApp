@@ -51,7 +51,7 @@ public class CourseResource {
 
 		Course courseUpdated = courseManagementService.save(course);
 
-		return new ResponseEntity<Course>(course, HttpStatus.OK);
+		return new ResponseEntity<Course>(courseUpdated, HttpStatus.OK);
 	}
 
 	@PostMapping("/instructors/{username}/courses")
