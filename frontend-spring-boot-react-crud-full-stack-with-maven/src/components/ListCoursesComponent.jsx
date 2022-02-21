@@ -74,7 +74,7 @@ class ListCoursesComponent extends Component {
                                             <td>{course.id}</td>
                                             <td>{course.description}</td>
                                             <td><button className="btn btn-success" onClick={() => this.updateCourseClicked(course.id)}>Update</button></td>
-                                            <td><button className="btn btn-warning" onClick={() => this.deleteCourseClicked(course.id)}>Delete</button></td>
+                                            <td><button className="btn btn-danger" onClick={() => this.deleteCourseClicked(course.id)}>Delete</button></td>
                                         </tr>
                                 )
                             }
